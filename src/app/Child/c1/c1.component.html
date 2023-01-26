@@ -1,0 +1,12 @@
+<div>
+    <table>
+        <th>Name</th>
+        <th>Date of birth</th>
+        <tr *ngFor="let info of users">
+            <td>{{info.Name}}</td>
+            <td>{{info.Dob}}</td>
+        </tr>
+    </table>
+</div>
+<div><app-c2 (sort)="sortMethod($event)"></app-c2></div>
+
